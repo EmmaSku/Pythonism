@@ -38,8 +38,6 @@ def rawbody_response(url, setIABs):
     body_response=r.text
     true_response=body_response.split()
     expected_iab=xml_map(xml_file, setIABs)
-    #print(true_response)
-    #print(expected_iab)
     counter_one=0
     counter_two=0
     counter_three=0
@@ -69,6 +67,7 @@ def main():
 stage_adress="http://lax4.wesee.com:8080/?loc="
 xml_file="/home/emma/Python/Files/xmlclient"
 
+#example input for argparse
 #.20minutos.es/noticia/2030681/0/pobreza/vida-sexual/menos-satisfactoria 508 305 582
 #http://beautyheart.org/pull-out-braid/4/ 10157 303 10014 10054 372
 
